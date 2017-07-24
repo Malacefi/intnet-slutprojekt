@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/startpage_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="intnet17.projektet.view.StartpageView">
+
+    <TextView
+        android:id="@+id/startpage_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/startpage_vertical_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/startpage_horizontal_margin"
+        android:layout_marginRight="@dimen/startpage_horizontal_margin"
+        android:text="Logga in"
+        style="@style/HeaderText"/>
+
+    <TextView
+        android:id="@+id/username_label"
+        android:layout_below="@id/startpage_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/startpage_horizontal_margin"
+        android:layout_marginRight="@dimen/startpage_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:text="Användarnamn"/>
+
+    <EditText
+        android:id="@+id/username_input"
+        android:layout_below="@id/username_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/edittext_padding"
+        android:layout_marginLeft="@dimen/startpage_horizontal_margin"
+        android:layout_marginRight="@dimen/startpage_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:maxLines="1"
+        android:inputType="text"
+        android:background="@drawable/edit_text_style"/>
+
+    <TextView
+        android:id="@+id/password_label"
+        android:layout_below="@id/username_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/startpage_horizontal_margin"
+        android:layout_marginRight="@dimen/startpage_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:text="Lösenord"/>
+
+    <EditText
+        android:id="@+id/password_input"
+        android:layout_below="@id/password_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/edittext_padding"
+        android:layout_marginLeft="@dimen/startpage_horizontal_margin"
+        android:layout_marginRight="@dimen/startpage_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:maxLines="1"
+        android:inputType="textPassword"
+        android:background="@drawable/edit_text_style"/>
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/startpage_horizontal_margin"
+        android:layout_marginRight="@dimen/startpage_horizontal_margin"
+        android:layout_marginBottom="30sp"
+        android:layout_below="@id/password_input"
+        android:text="Logga in"/>
+
+    <TextView
+        android:id="@+id/create_account_link"
+        android:layout_below="@id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/startpage_horizontal_margin"
+        android:layout_marginRight="@dimen/startpage_horizontal_margin"
+        android:text="@string/create_account"
+        android:onClick="onClick"
+        android:clickable="true"
+        style="@style/LinkText"/>
+</RelativeLayout>

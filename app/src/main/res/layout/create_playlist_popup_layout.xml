@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/create_playlist_popup_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/popup_padding"
+    android:background="@color/colorPrimaryDark"
+    tools:context="intnet17.projektet.view.CreatePlaylistPopup">
+
+    <TextView
+        android:id="@+id/create_playlist_popup_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:text="Skriv in namnet på den nya spellistan"
+        style="@style/HeaderText"/>
+
+    <EditText
+        android:id="@+id/create_playlist_name_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/create_playlist_popup_label"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:padding="@dimen/edittext_padding"
+        android:background="@drawable/edit_text_style"
+        android:maxLines="1"
+        android:inputType="text"/>
+
+    <Button
+        android:id="@+id/create_playlist_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/create_playlist_name_input"
+        android:text="Skapa spellista"/>
+
+    <Button
+        android:id="@+id/abort_create_playlist_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/create_playlist_button"
+        android:layout_below="@id/create_playlist_name_input"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:text="Avbryt"/>
+
+</RelativeLayout>

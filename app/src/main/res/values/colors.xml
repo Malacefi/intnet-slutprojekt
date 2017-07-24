@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorText">#FFFFFF</color>
+    <color name="colorBackground">#000000</color>
+    <color name="colorPrimary">#3D3D3D</color>
+    <color name="colorPrimaryDark">#151515</color>
+    <color name="colorAccent">#3D3D3D</color>
+    <color name="prettyPink">#FF9DD8</color>
+    <color name="colorLink">#7ECCEB</color>
+    <color name="opaqueBlack">#29000000</color>
+    <color name="darkText">#808080</color>
+</resources>

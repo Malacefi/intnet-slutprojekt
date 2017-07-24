@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/playlist_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="intnet17.projektet.view.PlaylistView">
+
+    <RelativeLayout
+        android:id="@+id/playlist_header"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:id="@+id/playlist_header_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            style="@style/HeaderText"/>
+
+        <TextView
+            android:id="@+id/add_song_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/playlist_header_label"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:text="Lägg till låt"
+            android:gravity="right"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:onClick="onClick"
+            style="@style/SmallText"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/android:list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/playlist_header"
+        android:focusable="true">
+
+    </ListView>
+
+</RelativeLayout>

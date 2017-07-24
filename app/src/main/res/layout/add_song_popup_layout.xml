@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/queue_song_popup_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="intnet17.projektet.view.AddSongPopup">
+
+    <TextView
+        android:id="@+id/add_song_popup_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:text="Lägg till en låt"
+        style="@style/HeaderText"/>
+
+    <TextView
+        android:id="@+id/add_song_name_popup_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:text="Namn på låten"
+        android:textSize="20dp"
+        android:layout_below="@id/add_song_popup_label"/>
+
+    <EditText
+        android:id="@+id/add_song_name_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_song_name_popup_label"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:padding="@dimen/edittext_padding"
+        android:background="@drawable/edit_text_style"
+        android:maxLines="1"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/add_song_link_popup_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:text="Länk till låten"
+        android:textSize="20dp"
+        android:layout_below="@id/add_song_name_input" />
+
+    <EditText
+        android:id="@+id/add_song_link_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_song_link_popup_label"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:padding="@dimen/edittext_padding"
+        android:background="@drawable/edit_text_style"
+        android:maxLines="1"
+        android:inputType="text"/>
+
+    <Button
+        android:id="@+id/add_song_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_song_link_input"
+        android:text="Lägg till"/>
+
+    <Button
+        android:id="@+id/abort_add_song_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/add_song_button"
+        android:layout_below="@id/add_song_link_input"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:text="Avbryt"/>
+
+</RelativeLayout>
