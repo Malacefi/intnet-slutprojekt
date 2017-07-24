@@ -1,0 +1,30 @@
+Här skriver vi lite API stuffsies.
+
+GET
+Kommer användas vid:
+Inloggning. /login?username$password
+Hämta spellistor kopplade till konto. /playlists?username
+Hämta låtar kopplade till spellista. /songs?playlist
+Hämta nästa låt.  /nextSong?playlist
+
+
+POST
+Kommer användas vid:
+Skapa konto. /createacc, req: username:ValdAnvändarnamn, password:ValtPassword
+Skapa spellista. /createplaylist, req: playlistname:SpellistansNamn, admin:AnvändarenSomSkapadeSpellistan
+Ta bort spellista. /removeplaylist, req: keytoplaylist:SpelListansId
+Köa en låt. /addsong, req: songname:NamnPåLåt, song:LänkTillLåten, playlistkey:VilkenSpellista
+Ta bort en låt. /removesong, req: songname:NamnPåLåt, song:LänkTillLåten, playlistkey:VilkenSpellista
+Lägga till behörighet på spellista. /addusertoplaylist username:user to add, playlistkey: key for the playlist.
+Lägga till låt till spellista från länk. /addsong playlistkey:key for playlist, song:youtubelink for the song, songname:name for the song
+
+PROTOKOLL:
+
+  FAIL: 0
+  SUCCESS: 1
+  USERNAME_DOES_NOT_EXIST: 2
+  WRONG_PASSWORD: 3
+  PLAYLIST_ALREADY_EXISTS: 4
+  PLAY_SONG: 5
+  NO_QUEUED_SONGS: 6
+  
